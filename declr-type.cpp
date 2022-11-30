@@ -9,7 +9,7 @@ int main()
     float flt = 2.5;
     string str = "text";
     char chr = 'c';
-    char ch[] = "abcd";
+    char ch[100] = "abcd";
 
     cout << typeid(a).name() << "   "
          << "int" << endl;
@@ -25,6 +25,12 @@ int main()
 
     cout << typeid(ch).name() << "   "
          << "char list" << endl;
+
+    // ---------- //
+    float ft = 4.8;
+
+    decltype(ft) expl = ft + 9.8;
+    cout << typeid(expl).name();
 
     return 0;
 }
