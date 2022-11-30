@@ -1,4 +1,5 @@
 #include <iostream>
+#include <typeinfo>
 using namespace std;
 
 int main()
@@ -7,14 +8,23 @@ int main()
     int a = 3, b = 5;
     float flt = 2.5;
     string str = "text";
+    char chr = 'c';
+    char ch[] = "abcd";
 
     cout << typeid(a).name() << "   "
-         << "int";
+         << "int" << endl;
 
     cout << typeid(str).name() << "   "
-         << "int";
+         << "string" << endl;
 
     cout << typeid(flt).name() << "   "
-         << "int";
+         << "float" << endl;
+
+    cout << typeid(chr).name() << "   "
+         << "char" << endl;
+
+    cout << typeid(ch).name() << "   "
+         << "char list" << endl;
+
     return 0;
 }
