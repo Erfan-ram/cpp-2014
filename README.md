@@ -11,7 +11,7 @@
 ---
 
 >C++ 2014 Features
-
+- [Aggregate member initialization](#aggregate-member-initialization)
 - [Function return type deduction](#function-return-type-deduction)
 ---
 ## Function return type deduction
