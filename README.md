@@ -84,5 +84,4 @@ here is an lambda with 2 parameters :
   };
 ```
 
-once you've learned auto functions , now you can comprehend this example easily
 [*conce you've learned auto functions , now you can comprehend this example easily* :desktop_computer:](https://github.com/Erfan-ram/cpp-repo/blob/master/files/lambda-plus.cpp)
