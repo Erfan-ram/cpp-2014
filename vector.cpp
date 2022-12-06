@@ -74,6 +74,17 @@ int main()
     {
         cout << i << "  ";
     }
+    // -------------------------------
+    // ------ exception ---------------------------
+    // -------------------------------
 
+    vector<int> new_test{1, 2, 3};
+
+    // gives garbage value
+    // cout << new_test[4];
+
+    // throws an exception
+    // cout << new_test.at(4);
+    
     return 0;
 }
