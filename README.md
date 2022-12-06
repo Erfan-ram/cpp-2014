@@ -35,7 +35,7 @@ auto add(int x, int y)
   return (x + y);
 }
 ```
-[*click to see full source code* :desktop_computer:](https://github.com/Erfan-ram/cpp-repo/blob/master/files/aggregate.cpp)
+[*click to see full source code* :desktop_computer:](https://github.com/Erfan-ram/cpp-repo/blob/master/files/autoFunc.cpp)
 ---
 ## Aggregate member initialization
 a struct can have multiple members:
@@ -83,3 +83,6 @@ here is an lambda with 2 parameters :
    cout << "Sum = " << a + b;
   };
 ```
+
+once you've learned auto functions , now you can comprehend this example easily
+[*conce you've learned auto functions , now you can comprehend this example easily* :desktop_computer:](https://github.com/Erfan-ram/cpp-repo/blob/master/files/lambda-plus.cpp)
