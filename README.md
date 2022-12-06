@@ -12,41 +12,7 @@
 
 >C++ 2014 Features
 
-- [Aggregate member initialization](#L5)
-.
-.
-.
-..
-.
-.
+- [cpp-repo](#cpp-repo)
+  - [Aggregate member initialization](#aggregate-member-initialization)
 
-.
-.
-.
-.
-.
-.
-.
-.
-.
-.
-
-.
-.
-.
-.
-.
-.
-......
-........
-.
-.
-.
-...
-.
-..
-.
-
-.
-.
-..
+## Aggregate member initialization
