@@ -12,16 +12,25 @@
 
 >C++ 2014 Features
 
-- [Aggregate member initialization](#aggregate-member-initialization)
+- [Function return type deduction](#function-return-type-deduction)
+---
+## Function return type deduction
+Type deduction (also sometimes called type inference) is a feature that allows the compiler to deduce the type of an object from the object’s initializer. To use type deduction, the 'auto' keyword is used in place of the variable’s type:
 
+```
+  auto d{ 5.0 }; // 5.0 is a double literal, so d will be type double
+  auto i{ 1 + 2 }; // 1 + 2 evaluates to an int, so i will be type int
+  auto x { i }; // i is an int, so x will be type int too
+```
+---
 ## Aggregate member initialization
 a struct can have multiple members:
 ```
 struct Employee
 {
-    int id {};
-    int age {};
-    double wage {};
+    int id;
+    int age;
+    double wage;
 };
 ```
 When we define an object with a struct type, we need some way to initialize multiple members at initialization time:
