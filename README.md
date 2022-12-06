@@ -11,8 +11,9 @@
 ---
 
 >C++ 2014 Features
-- [Aggregate member initialization](#aggregate-member-initialization)
 - [Function return type deduction](#function-return-type-deduction)
+- [Aggregate member initialization](#aggregate-member-initialization)
+- [lambdas](#lambdas)
 ---
 ## Function return type deduction
 Type deduction (also sometimes called type inference) is a feature that allows the compiler to deduce the type of an object from the object’s initializer. To use type deduction, the 'auto' keyword is used in place of the variable’s type:
@@ -55,3 +56,30 @@ Aggregates use a form of initialization called aggregate initialization, which a
 Employee joe { 2, 28, 45000.0 };     // list initialization using braced list (preferred)
 ```
 [*click to see full source code* :desktop_computer:](https://github.com/Erfan-ram/cpp-repo/blob/master/files/aggregate.cpp)
+
+---
+## lambdas
+A basic lambda expression can look something like this:
+```
+auto greet = []() {
+  // lambda function body
+};
+```
+
+The above code is equivalent to:
+```
+void greet() {
+  // function body
+}
+```
+Now, just like the normal functions, we can simply invoke the lambda expression using:
+```
+greet();
+```
+
+here is an lambda with 2 parameters :
+```
+  auto add = [] (int a, int b) {
+   cout << "Sum = " << a + b;
+  };
+```
