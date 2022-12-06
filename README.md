@@ -11,7 +11,7 @@
 ---
 
 >C++ 2014 Features
-# [Aggregate member initialization][sft]
+- [cpp-repo](#cpp-repo)
+  - [Aggregate member initialization](#aggregate-member-initialization)
 
 ## Aggregate member initialization
-[Reference to this section](#sft)
