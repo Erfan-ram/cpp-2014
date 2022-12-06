@@ -18,9 +18,9 @@
 Type deduction (also sometimes called type inference) is a feature that allows the compiler to deduce the type of an object from the object’s initializer. To use type deduction, the 'auto' keyword is used in place of the variable’s type:
 
 ```
-  auto d{ 5.0 }; // 5.0 is a double literal, so d will be type double
-  auto i{ 1 + 2 }; // 1 + 2 evaluates to an int, so i will be type int
-  auto x { i }; // i is an int, so x will be type int too
+  auto d = 5.0 ; // 5.0 is a double literal, so d will be type double
+  auto i = 1 + 2; // 1 + 2 evaluates to an int, so i will be type int
+  auto x = i; // i is an int, so x will be type int too
 ```
 ---
 ## Aggregate member initialization
@@ -41,4 +41,4 @@ Aggregates use a form of initialization called aggregate initialization, which a
 ```
 Employee joe { 2, 28, 45000.0 };     // list initialization using braced list (preferred)
 ```
-[*click to see full source code*](https://github.com/Erfan-ram/cpp-repo/blob/master/files/aggregate.cpp)
+[*click to see full source code* :desktop_computer:](https://github.com/Erfan-ram/cpp-repo/blob/master/files/aggregate.cpp)
