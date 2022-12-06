@@ -22,6 +22,19 @@ Type deduction (also sometimes called type inference) is a feature that allows t
   auto i = 1 + 2; // 1 + 2 evaluates to an int, so i will be type int
   auto x = i; // i is an int, so x will be type int too
 ```
+Type deduction will not work for objects that do not have initializers or empty initializers. Thus, the following is not valid:
+```
+  auto x; // The compiler is unable to deduce the type of x
+
+```
+When using an auto return type, all return statements within the function must return values of the same type . For example:
+```
+auto add(int x, int y)
+{
+  return (x + y);
+}
+```
+[*click to see full source code* :desktop_computer:](https://github.com/Erfan-ram/cpp-repo/blob/master/files/aggregate.cpp)
 ---
 ## Aggregate member initialization
 a struct can have multiple members:
