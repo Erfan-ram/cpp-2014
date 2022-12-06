@@ -11,7 +11,8 @@
 ---
 
 >C++ 2014 Features
- - [Aggregate member initialization](#aggregate-member-initialization)
+
+- [Aggregate member initialization](#aggregate-member-initialization)
 
 ## Aggregate member initialization
 a struct can have multiple members:
@@ -31,4 +32,4 @@ Aggregates use a form of initialization called aggregate initialization, which a
 ```
 Employee joe { 2, 28, 45000.0 };     // list initialization using braced list (preferred)
 ```
-[click to see full source code](https://github.com/Erfan-ram/cpp-repo/blob/master/files/aggregate.cpp)
+[*click to see full source code*](https://github.com/Erfan-ram/cpp-repo/blob/master/files/aggregate.cpp)
