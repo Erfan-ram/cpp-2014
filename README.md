@@ -14,3 +14,17 @@
  - [Aggregate member initialization](#aggregate-member-initialization)
 
 ## Aggregate member initialization
+a struct can have multiple members:
+```
+struct Employee
+{
+    int id {};
+    int age {};
+    double wage {};
+};
+```
+When we define an object with a struct type, we need some way to initialize multiple members at initialization time:
+```
+Employee joe; // how do we initialize joe.id, joe.age, and joe.wage?
+```
+Aggregates use a form of initialization called aggregate initialization, which allows us to directly initialize the members of aggregates. To do this, we provide an initializer list as an initializer, which is just a list of comma-separated initialization values.
