@@ -27,10 +27,7 @@ Type deduction will not work for objects that do not have initializers or empty 
   auto x; // The compiler is unable to deduce the type of x
 
 ```
-Since the compiler already has to deduce the return type from the return statement, in C++14, the auto keyword was extended to do function return type deduction. This works by using the auto keyword in place of the function’s return type.
-
-
-When using an auto return type, all return statements within the function must return values of the same type . For example:
+Since the compiler already has to deduce the return type from the return statement, in C++14, the auto keyword was extended to do function return type deduction. This works by using the auto keyword in place of the function’s return type. When using an auto return type, all return statements within the function must return values of the same type . For example:
 ```
 auto add(int x, int y)
 {
