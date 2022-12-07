@@ -10,21 +10,21 @@
 
 ---
 
->C++ 2014 Features
+*`C++ 2014 Features`
 - [Function return type deduction](#function-return-type-deduction)
 - [constexpr Specifier](#constexpr-specifier)
 - [Aggregate member initialization](#aggregate-member-initialization)
 - [lambdas](#lambdas)
 ---
 ## Function return type deduction
-Type deduction (also sometimes called type inference) is a feature that allows the compiler to deduce the type of an object from the object’s initializer. To use type deduction, the 'auto' keyword is used in place of the variable’s type:
+Type deduction (also sometimes called type inference) is a feature that allows the compiler to `deduce the type of an object` from the object’s initializer. To use type deduction, the `auto` keyword is used in place of the variable’s type:
 
 ```cpp
   auto d = 5.0 ; // 5.0 is a double literal, so d will be type double
   auto i = 1 + 2; // 1 + 2 evaluates to an int, so i will be type int
   auto x = i; // i is an int, so x will be type int too
 ```
-Type deduction will not work for objects that do not have initializers or empty initializers. Thus, the following is not valid:
+Type deduction will not work for objects that do `not have initializers` or `empty initializers`. Thus, the following is not valid:
 ```cpp
   auto x; // The compiler is unable to deduce the type of x
 
@@ -41,7 +41,7 @@ auto add(int x, int y)
 ---
 ## Constexpr Specifier
 
-constexpr is a feature added in C++ 11. The main idea is a performance improvement of programs by doing computations at compile time rather than run time. Note that once a program is compiled and finalized by the developer, it is run multiple times by users. The idea is to spend time in compilation and save time at run time.
+constexpr is a feature added in C++ 11. The main idea is a performance improvement of programs by doing `computations at compile time` rather than run time. Note that once a program is compiled and finalized by the developer, it is run multiple times by users. The idea is to spend time in compilation and save time at `run time`.
 
 ---
 ## Aggregate member initialization
@@ -54,11 +54,11 @@ struct Employee
     double wage;
 };
 ```
-When we define an object with a struct type, we need some way to initialize multiple members at initialization time:
+When we define an object with a struct type, we need some way to initialize multiple members at `initialization time`:
 ```cpp
 Employee joe; // how do we initialize joe.id, joe.age, and joe.wage?
 ```
-Aggregates use a form of initialization called aggregate initialization, which allows us to directly initialize the members of aggregates. To do this, we provide an initializer list as an initializer, which is just a list of comma-separated initialization values.
+Aggregates use a form of initialization called aggregate initialization, which allows us to directly initialize the members of aggregates. To do this, we provide an initializer list as an initializer, which is just a `list of comma-separated` initialization values.
 ```cpp
 Employee joe { 2, 28, 45000.0 };     // list initialization using braced list (preferred)
 ```
