@@ -12,6 +12,7 @@
 
 >C++ 2014 Features
 - [Function return type deduction](#function-return-type-deduction)
+- [constexpr Specifier](#constexpr-specifier)
 - [Aggregate member initialization](#aggregate-member-initialization)
 - [lambdas](#lambdas)
 ---
@@ -36,6 +37,11 @@ auto add(int x, int y)
 }
 ```
 [*click to see full source code* :desktop_computer:](https://github.com/Erfan-ram/cpp-repo/blob/master/files/autoFunc.cpp)
+---
+## Constexpr Specifier
+
+constexpr is a feature added in C++ 11. The main idea is a performance improvement of programs by doing computations at compile time rather than run time. Note that once a program is compiled and finalized by the developer, it is run multiple times by users. The idea is to spend time in compilation and save time at run time.
+
 ---
 ## Aggregate member initialization
 a struct can have multiple members:
