@@ -131,3 +131,4 @@ auto my_lambda = [=] (){
   // lambda body
 }
 ```
+[*lambda-test* :desktop_computer:](https://github.com/Erfan-ram/cpp-repo/blob/master/files/aggregate.cpp)
