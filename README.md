@@ -41,7 +41,26 @@ auto add(int x, int y)
 ---
 ## Constexpr Specifier
 
-constexpr is a feature added in C++ 11. The main idea is a performance improvement of programs by doing `computations at compile time` rather than run time. Note that once a program is compiled and finalized by the developer, it is run multiple times by users. The idea is to spend time in compilation and save time at `run time`.
+constexpr is a feature added in C++ 11 but developed features in c++ 14. The main idea is a performance improvement of programs by doing `computations at compile time` rather than run time. Note that once a program is compiled and finalized by the developer, it is run multiple times by users. The idea is to spend time in compilation and save time at `run time`.
+
+```cpp
+#include <iostream>
+
+constexpr int product(int x, int y) { return (x * y); }
+
+int main()
+{
+	constexpr int x = product(10, 20);
+	std::cout << x;
+	return 0;
+}
+
+```
+
+- In C++ 11, a constexpr function should contain only one return statement. C++ 14 allows more than one statement.
+- constexpr function should refer only to constant global variables.
+- constexpr function can call only other constexpr functions not simple functions.
+- The function should not be of a void type.
 
 ---
 ## Aggregate member initialization
