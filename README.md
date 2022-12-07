@@ -12,9 +12,9 @@
 
 > `C++ 2014 Features`
 - [Function return type deduction](#function-return-type-deduction)
-- [constexpr Specifier](#constexpr-specifier)
+- [Constexpr Specifier](#constexpr-specifier)
 - [Aggregate member initialization](#aggregate-member-initialization)
-- [lambdas](#lambdas)
+- [Lambdas](#lambdas)
 ---
 ## Function return type deduction
 Type deduction (also sometimes called type inference) is a feature that allows the compiler to `deduce the type of an object` from the object’s initializer. To use type deduction, the `auto` keyword is used in place of the variable’s type:
@@ -84,7 +84,7 @@ Employee joe { 2, 28, 45000.0 };     // list initialization using braced list (p
 [*click to see full source code* :desktop_computer:](https://github.com/Erfan-ram/cpp-repo/blob/master/files/aggregate.cpp)
 
 ---
-## lambdas
+## Lambdas
 A basic lambda expression can look something like this:
 ```cpp
 auto greet = []() {
