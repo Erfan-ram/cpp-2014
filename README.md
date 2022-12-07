@@ -10,7 +10,7 @@
 
 ---
 
-*`C++ 2014 Features`
+> `C++ 2014 Features`
 - [Function return type deduction](#function-return-type-deduction)
 - [constexpr Specifier](#constexpr-specifier)
 - [Aggregate member initialization](#aggregate-member-initialization)
