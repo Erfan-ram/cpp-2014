@@ -112,6 +112,12 @@ here is an lambda with 2 parameters :
   };
 ```
 
+you can call it now
+
+```cpp
+add(5 ,10)
+```
+
 
 [*conce you've learned auto functions , now you can comprehend this example easily* :desktop_computer:](https://github.com/Erfan-ram/cpp-repo/blob/master/files/lambda-plus.cpp)
 
@@ -119,7 +125,10 @@ here is an lambda with 2 parameters :
 you are not able to use `local variables` in a lambda . you can define which you prefer to use :
 
 ```cpp
-auto my_lambda = [a, b, c, d, e] (){
+int a;
+char b;
+
+auto my_lambda = [a, b] (){
   // lambda body
 }
 ```
@@ -127,6 +136,10 @@ auto my_lambda = [a, b, c, d, e] (){
 if you want lambda to use all local variables you can act like this :
 
 ```cpp
+int a,x;
+char b;
+string c;
+
 auto my_lambda = [=] (){
   // lambda body
 }
